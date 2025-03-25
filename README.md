@@ -1,4 +1,4 @@
-<h1 align="center">SharKey</h1>
+<h1 align="center">Hearmony</h1>
 
 <p align="center">
   <em>University Project</em>
