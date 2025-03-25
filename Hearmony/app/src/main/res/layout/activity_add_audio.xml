@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAudioActivity"
+    android:background="@color/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:40"
+        android:textColor="@color/blu_scuro"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"/>
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="90sp"
+        android:src="@drawable/sound_img"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        app:tint="@color/blu_dettagli" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120sp"
+        android:gravity="bottom|center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/elimina"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:src="@drawable/delete"
+                android:scaleType="fitXY"
+                android:background="@color/bg"
+                app:tint="@color/blu_scuro" />
+
+            <TextView
+                android:id="@+id/testo_elimina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elimina"
+                android:textSize="20sp"
+                android:textColor="@color/blu_scuro"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:src="@drawable/stop"
+            android:scaleType="fitXY"
+            android:padding="35sp"
+            android:background="@drawable/recording_button"
+            app:tint="@color/white"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/riprendi"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:src="@drawable/circle"
+            android:scaleType="fitXY"
+            android:padding="20sp"
+            android:background="@drawable/recording_button"
+            app:tint="@color/white"
+            android:visibility="visible"/>
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/avanti"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:src="@drawable/share"
+                android:scaleType="fitXY"
+                android:background="@color/bg"
+                app:tint="@color/blu_scuro" />
+
+            <TextView
+                android:id="@+id/testo_avanti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avanti"
+                android:textSize="20sp"
+                android:textColor="@color/blu_scuro"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"/>
+</RelativeLayout>

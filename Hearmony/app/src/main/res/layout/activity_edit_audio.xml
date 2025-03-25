@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAudioActivity"
+    android:background="@color/bg">
+
+    <ImageButton
+        android:id="@+id/back_arrow_add_audio"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="40sp"
+        android:background="@drawable/arrow_bg"
+        android:padding="10sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/backarrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:40"
+        android:textColor="@color/blu_scuro"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"/>
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="90sp"
+        android:src="@drawable/sound_img"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        app:tint="@color/blu_dettagli" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="350sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:id="@+id/top">
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:id="@+id/taglia_audio"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:src="@drawable/taglia_audio"
+                android:scaleType="fitXY"
+                android:padding="25sp"
+                android:background="@drawable/recording_button"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taglia"
+                android:textColor="@color/blu_scuro"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:id="@+id/effetti_audio"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:src="@drawable/effetti_audio"
+                android:scaleType="fitXY"
+                android:padding="20sp"
+                android:background="@drawable/recording_button"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aggiungi effetti"
+                android:textColor="@color/blu_scuro"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:id="@+id/elimina_rumore_fondo"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:src="@drawable/elimina_rumore_fondo"
+                android:scaleType="fitXY"
+                android:padding="20sp"
+                android:background="@drawable/recording_button"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elimina rumore"
+                android:textColor="@color/blu_scuro"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20sp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30sp"
+
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/elimina"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:src="@drawable/delete"
+                android:scaleType="fitXY"
+                android:background="@color/bg"
+                app:tint="@color/blu_scuro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elimina"
+                android:textSize="20sp"
+                android:textColor="@color/blu_scuro"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/avanti"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:src="@drawable/share"
+                android:scaleType="fitXY"
+                android:background="@color/bg"
+                app:tint="@color/blu_scuro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avanti"
+                android:textSize="20sp"
+                android:textColor="@color/blu_scuro"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hearmony</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Cerca</string>
+    <string name="title_addaudio">Aggiungi</string>
+    <string name="title_profile">Profilo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="playlist_name">Playlist</string>
+    <string-array name="array">
+        <item>Pino</item>
+        <item>Peppino</item>
+        <item>Peppe</item>
+        <item>Pene</item>
+        <item>Pollo</item>
+    </string-array>
+
+</resources>

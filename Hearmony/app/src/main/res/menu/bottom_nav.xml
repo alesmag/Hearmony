@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:title="Cerca"
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"/>
+    <item
+        android:title="Aggiungi"
+        android:id="@+id/nav_addaudio"
+        android:icon="@drawable/microfono"/>
+
+    <item
+        android:title="Segreteria"
+        android:id="@+id/nav_segreteria"
+        android:icon="@drawable/segreteria" />
+
+    <item
+        android:title="Profilo"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/usernav"/>
+</menu>

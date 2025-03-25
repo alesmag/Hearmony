@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".PublishAudioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30sp">
+
+            <ImageButton
+                android:id="@+id/back_arrow_edit_audio"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/arrow_bg"
+                android:padding="10sp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backarrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titolo"
+                android:textColor="@color/blu_scuro"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/audio_titolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="titolo"
+                android:inputType="text" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrizione"
+                android:textColor="@color/blu_scuro"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/audio_descrizione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="descrizione"
+                android:inputType="textCapSentences|textMultiLine" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:labelFor="@id/label"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:id="@+id/switchButton"/>
+
+                <Space
+                    android:layout_width="12sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solo amici"
+                    android:textColor="@color/blu_scuro"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/tags_section">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags"
+                    android:textColor="@color/blu_scuro"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/friends_section">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cerca amici"
+                    android:textColor="@color/blu_scuro"
+                    android:textSize="25sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/amici"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="nome profilo"
+                    android:inputType="textCapSentences|textMultiLine" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Condividi a"
+                    android:textColor="@color/blu_scuro"
+                    android:textSize="25sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chopper"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Chopper56"
+                        android:textColor="@color/blu_scuro"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kyle"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="kyle_broflovski.76"
+                        android:textColor="@color/blu_scuro"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user4"
+                        app:shapeAppearanceOverlay="@style/Circular" />
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="LucaDeGregori_6"
+                        android:textColor="@color/blu_scuro"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="11sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30sp" />
+
+            <Button
+                android:id="@+id/pubblica"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="90dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="Pubblica"
+                android:textColor="@color/blu_scuro"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

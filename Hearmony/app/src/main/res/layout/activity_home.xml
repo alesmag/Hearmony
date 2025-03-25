@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="10sp"
+                android:text="Ultimi Ascolti"
+                android:textColor="@color/blu_scuro"
+                android:textSize="25sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20sp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10sp"
+                        android:background="@drawable/playlist_bg"
+                        android:orientation="vertical"
+                        android:padding="4sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="18dp">
+
+                            <ImageButton
+                                android:id="@+id/playlist1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/darkacademia" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/nomeplaylist1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NomePlaylist1"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/architects" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/negramaro" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist2"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/nightcall" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist4"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="10sp"
+                android:text="Tendenze"
+                android:textColor="@color/blu_scuro"
+                android:textSize="25sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20sp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10sp"
+                        android:background="@drawable/playlist_bg"
+                        android:orientation="vertical"
+                        android:padding="4sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="18dp">
+
+                            <ImageButton
+                                android:id="@+id/playlist5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/goodvibes" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/nomeplaylist5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NomePlaylist"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:background="@color/white"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/raggaetonmix" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/classics" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/rain" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="10sp"
+                android:text="Consigliati"
+                android:textColor="@color/blu_scuro"
+                android:textSize="25sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20sp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10sp"
+                        android:background="@drawable/playlist_bg"
+                        android:orientation="vertical"
+                        android:padding="4sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="18dp">
+
+                            <ImageButton
+                                android:id="@+id/playlist9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/metalhead" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/nomeplaylist9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NomePlaylist"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/phonk" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/peta" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/climatechange" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="10sp"
+                android:text="Creati per te"
+                android:textColor="@color/blu_scuro"
+                android:textSize="25sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="20sp"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10sp"
+                        android:background="@drawable/playlist_bg"
+                        android:orientation="vertical"
+                        android:padding="4sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="18dp">
+
+                            <ImageButton
+                                android:id="@+id/playlist13"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/horrortag" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/nomeplaylist13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NomePlaylist"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/dancetag" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/crypto" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="10sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10sp"
+                            android:background="@drawable/playlist_bg"
+                            android:orientation="vertical"
+                            android:padding="4sp">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                app:cardCornerRadius="18dp">
+
+                                <ImageButton
+                                    android:id="@+id/playlist16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/sardegna" />
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/nomeplaylist16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NomePlaylist"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="10sp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
